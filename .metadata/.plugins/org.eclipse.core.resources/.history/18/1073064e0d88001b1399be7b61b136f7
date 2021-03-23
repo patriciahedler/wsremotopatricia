@@ -1,0 +1,67 @@
+package br.com.gama.modelo;
+
+/*
+ * Design Pattern => é um conjunto com as melhores praticas para 
+ * programação com orientação a objeto
+ * DTO (Data Transfer OBjetct) => é um pattern que descreve as melhores práticas
+ * para representar uma classe de um diagrama em programação
+ * Regras:
+ * TODOS os atributos devem ser privados;
+ * CADA atributo deve possuir INDIVIDUALMENTE um método pra input e outro método pra output;
+ * 
+ * 
+ * 
+ * modelo = model = beans = javabeans = to = dto (pacotes com classes originadas do diagrama)
+ * teste = principal = implementacao (pacotes com a(s) classe(s) que contenha(m) o main())
+ * 
+  */
+public class Aluno {
+
+	private String nome;
+	private int matricula;
+	private String email;
+	private String fone;
+	
+	@Override
+	public String toString() {
+		return "Aluno [nome=" + nome + ", matricula=" + matricula + ", email=" + email + ", fone=" + fone + "]";
+	}
+
+	// this é pra forçar que o "nome" na esquerda é um atributo.
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public int getMatricula() {
+		return matricula;
+	}
+
+	public void setMatricula(int matricula) {
+		this.matricula = matricula;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getFone() {
+		return fone;
+	}
+
+	public void setFone(String fone) {
+		this.fone = fone;
+	}
+
+		
+	
+	
+	
+}

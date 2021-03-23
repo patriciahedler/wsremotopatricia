@@ -1,0 +1,20 @@
+package variaveis;
+
+public class TiposDados {
+ //java é orientado a objeto
+
+	public static void main(String[] args) {
+		String nome = "Patricia Hedler";
+		int idade = 29;
+		double altura = 1.68;
+		System.out.print(nome);
+		System.out.print(idade);
+		System.out.print(altura);
+		
+	}
+
+	
+	
+	
+	
+}

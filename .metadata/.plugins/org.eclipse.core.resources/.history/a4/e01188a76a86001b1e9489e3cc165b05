@@ -1,0 +1,14 @@
+package decisao;
+
+import javax.swing.JOptionPane;
+
+public class DesafioDecisao {
+public static void main(String[] args) {
+	short ndiarias =  Short.parseShort(JOptionPane.showInputDialog("Digite o número de diárias"));
+	
+	if(ndiarias>= 15) {
+		System.out.println("Total conta é R$" + (80*5.5)*ndiarias);
+	
+	}
+}
+}

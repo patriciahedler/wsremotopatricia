@@ -1,0 +1,11 @@
+package br.com.caicai;
+
+public class Elevador {
+
+	private String nome;
+	private byte maximoPessoas;
+	private byte andarMaximo;
+	private byte andarMinimo;
+	private byte andarAtual;
+	private byte qtePessoas;
+}

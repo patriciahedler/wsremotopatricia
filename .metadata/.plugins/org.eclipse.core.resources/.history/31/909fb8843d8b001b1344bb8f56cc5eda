@@ -1,0 +1,23 @@
+package br.com.produto.implantacao;
+
+import br.com.produto.modelo.PessoaFisica;
+
+public class TesteCliente {
+	public static void main(String[] args) {
+		
+		//criei pela sub e instanciei pela sub
+		PessoaFisica pf = new PessoaFisica();
+		
+		//criei pela super e instanciei pela sub
+		// Cliente cli = new PessoaFisica();
+		
+		
+		
+		
+		
+	}
+	
+	
+	
+	
+}

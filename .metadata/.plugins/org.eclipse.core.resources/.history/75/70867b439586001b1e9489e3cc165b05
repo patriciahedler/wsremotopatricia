@@ -1,0 +1,41 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+/*
+ * Exercicio 2
+Monte um programa que solicite a idade e o nome das pessoas. A aplicação continuará perguntando nome e idade enquanto o usuário afirmar que deseja continuar.
+Ao terminar, a aplicação deverá exibir:
+- a quantidade de pessoas maiores de idade e 
+- a média entre todas as idades que foram digitadas. 
+- a pessoa mais experiente (nome e idade)
+- a pessoa mais jovem (nome e idade)
+ */
+public class ExercicioRepeticao {
+public static void main(String[] args) {
+	int idade = 0;
+	String nome = "";
+	String resp = "";
+			
+	do {
+		numero1 = Integer.parseInt(JOptionPane.showInputDialog("Número 1"));
+		numero2= Integer.parseInt(JOptionPane.showInputDialog("Número 2"));
+		operacao =JOptionPane.showInputDialog("Digite operador");
+		if (operacao.equals("+")==true) {
+			System.out.println("Resultado: " + (numero1+numero2));
+		} else if (operacao.equals("-")==true) {
+			System.out.println("Resultado: " + (numero1-numero2));
+		} else if (operacao.equals("*")==true) {
+			System.out.println("Resultado: " + (numero1*numero2));
+		} else if (operacao.equals("/")==true) {
+			System.out.println("Resultado: " + (numero1/numero2));
+		}else {
+			System.out.println("Você não digitou um operador válido");
+		}
+		resp = JOptionPane.showInputDialog("Digite <S> para continuar").toUpperCase();
+	} while(resp.contentEquals("S"));
+	
+}
+}
+
+}
+}

@@ -1,0 +1,21 @@
+package br.com.rubinhocar.teste;
+
+import br.com.rubinhocar.modelo.Veiculo;
+// ctrl shift O para importar o modelo
+
+public class TesteVeiculo {
+	
+	public static void main(String[] args) {
+	
+		//instanciando um objeto
+		Veiculo carro = new Veiculo();
+		// os dois "veiculos" precisam estar com V maíscuilo.
+		carro.preencherMontadora("fiat");
+		System.out.println(carro.montadora);
+		
+		
+		
+		
+	}
+	
+}

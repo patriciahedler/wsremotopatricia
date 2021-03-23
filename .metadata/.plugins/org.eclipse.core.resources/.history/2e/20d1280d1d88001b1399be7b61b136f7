@@ -1,0 +1,9 @@
+package br.com.gama.modelo;
+
+public class Curso {
+	private String sigla;
+	private String descricao;
+	private boolean complemento;
+	private String bairro;
+	private String cidade;
+}

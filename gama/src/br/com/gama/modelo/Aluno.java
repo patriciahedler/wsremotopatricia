@@ -1,0 +1,128 @@
+package br.com.gama.modelo;
+
+/*
+ * Design Pattern => é um conjunto com as melhores praticas para 
+ * programação com orientação a objeto
+ * DTO (Data Transfer OBjetct) => é um pattern que descreve as melhores práticas
+ * para representar uma classe de um diagrama em programação
+ * Regras:
+ * 1 - TODOS os atributos devem ser privados;
+ * 2 - CADA atributo deve possuir INDIVIDUALMENTE um método pra input (set) e outro método pra output(get);
+ * 3 - TODA classe modelo deve possuir NO MINIMO dois construtores:
+ * -um vazio (não faz absolutamente nada)
+ * -um cheio (preenchendo todos so atributos)
+ * 
+ *  * modelo = model = beans = javabeans = to = dto (pacotes com classes originadas do diagrama)
+ * teste = principal = implementacao (pacotes com a(s) classe(s) que contenha(m) o main())
+ * 
+  */
+public class Aluno {
+
+	private String nome;
+	private int matricula;
+	private String email;
+	private String fone;
+	private Endereco endereco;
+	
+	
+	public Aluno() {
+		super();
+	}
+
+	
+
+	public Aluno(String nome, int matricula, String email, String fone, Endereco endereco) {
+		super();
+		this.nome = nome;
+		this.matricula = matricula;
+		this.email = email;
+		this.fone = fone;
+		this.endereco = endereco;
+	}
+
+
+
+	// nome do construtor é sempre o nome da classe	
+	
+	
+	
+	public String getUsuario() {
+		if(email.contains("@")==true) {
+			return "Usuário:" + email.substring(0,email.indexOf("@"));
+		
+		} return "email incompleto";			
+	} 
+	
+
+
+	public void setAll(Endereco endereco, String nome, int matricula, String email, String fone) {
+		this.endereco = endereco;
+		this.nome = nome;
+		this.matricula = matricula;
+		this.email = email;
+		this.fone = fone;
+		//preenche todos os atributos de uma vez
+	}
+	
+	
+
+	@Override
+	public String toString() {
+		return "Aluno [nome=" + nome + ", matricula=" + matricula + ", email=" + email + ", fone=" + fone
+				+ ", endereco=" + endereco + "]";
+	}
+
+
+
+	// this é pra forçar que o "nome" na esquerda é um atributo.
+	
+	
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public int getMatricula() {
+		return matricula;
+	}
+
+	public void setMatricula(int matricula) {
+		this.matricula = matricula;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getFone() {
+		return fone;
+	}
+
+	public void setFone(String fone) {
+		this.fone = fone;
+	}
+
+
+
+	public Endereco getEndereco() {
+		return endereco;
+	}
+
+
+
+	public void setEndereco(Endereco endereco) {
+		this.endereco = endereco;
+	}
+
+		
+	
+	
+	
+}

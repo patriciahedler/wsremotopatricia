@@ -1,0 +1,19 @@
+package br.com.gama.modelo;
+
+/*
+ * Design Pattern => é um conjunto com as melhores praticas para 
+ * programação com orientação a objeto
+ * 
+ */
+public class Aluno {
+
+	private String nome;
+	private int matricula;
+	private String email;
+	private String fone;
+	
+	
+	
+	
+	
+}

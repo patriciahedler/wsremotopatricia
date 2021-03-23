@@ -1,0 +1,29 @@
+package br.com.produto.implantacao;
+
+import br.com.produto.modelo.Fabricante;
+import br.com.produto.modelo.Produto;
+
+public class TesteVenda {
+
+	public static void main(String[] args) {
+		Produto produto = new Produto(
+				Magica2.i("id") ,
+				Magica2.s("descricao"),
+				new Fabricante(),
+				Magica2.f("valor venda"),
+				Magica2.f("valor compra")
+				
+				);
+		
+				
+			
+		
+		}
+	
+	
+	
+	
+	
+	
+	
+}

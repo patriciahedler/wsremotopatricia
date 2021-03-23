@@ -1,0 +1,36 @@
+package br.com.produto.implantacao;
+
+import br.com.produto.modelo.Fabricante;
+import br.com.produto.modelo.Produto;
+
+public class TesteVenda {
+
+	public static void main(String[] args) {
+		Produto produto = new Produto(
+				Magica2.i("id") ,
+				Magica2.s("descricao"),
+				new Fabricante(),
+				Magica2.f("valor venda"),
+				Magica2.f("valor compra"),
+				
+				);
+		
+		System.out.println(produto.toString());	
+		if verificarEstoque()<5{
+			System.out.println("Estoque baixo"); 
+		
+		} if verificarEstoque()>=5 || verificarEstoque()<=15{
+			System.out.println("Estoque regular"); 
+			} else
+				System.out.println("Estoque alto"); 			
+			
+		
+		}
+	
+	
+	
+	
+	
+	
+	
+}

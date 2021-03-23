@@ -1,0 +1,20 @@
+package br.com.produto.modelo;
+
+// PJ é filha de Cliente (extends)
+public class PessoaJuridica extends Cliente {
+
+	private String cnpj;
+	private String contato;
+	private String ie; // inscrição estadual
+	
+	
+	@Override
+	public String toString() {
+		return "PessoaJuridica [cnpj=" + cnpj + ", contato=" + contato + ", ie=" + ie + ","+ super.toString() + "]";
+	} //super.toString() pega o toString() da superclasse (cliente).
+	
+	
+	
+	
+	
+}

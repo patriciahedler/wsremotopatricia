@@ -1,0 +1,11 @@
+package br.com.caicai.teste;
+
+import br.com.caicai.Elevador;
+
+public class TesteElevador {
+	
+		Elevador elevador = new Elevador();
+	
+	
+	
+}

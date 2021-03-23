@@ -1,0 +1,122 @@
+package br.com.produto.modelo;
+
+public class Venda {
+
+	private int notaFiscal;
+	private float total;
+	private Cliente cliente;
+	private Produto produto;
+	private Fabricante fabricante;
+	
+	
+	
+	public Venda() {
+		super();
+	}
+
+
+
+	public Venda(int notaFiscal, float total, Cliente cliente, Produto produto) {
+		super();
+		this.notaFiscal = notaFiscal;
+		this.total = total;
+		this.cliente = cliente;
+		this.produto = produto;
+		this.fabricante = fabricante;
+	}
+
+
+
+	public Fabricante getFabricante() {
+		return fabricante;
+	}
+
+
+
+	public void setFabricante(Fabricante fabricante) {
+		this.fabricante = fabricante;
+	}
+
+
+
+	public int getNotaFiscal() {
+		return notaFiscal;
+	}
+
+
+
+	public void setNotaFiscal(int notaFiscal) {
+		this.notaFiscal = notaFiscal;
+	}
+
+
+
+	public float getTotal() {
+		return total;
+	}
+
+
+
+	public void setTotal(float total) {
+		this.total = total;
+	}
+
+
+
+	public Cliente getCliente() {
+		return cliente;
+	}
+
+
+
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
+	}
+
+
+
+	public Produto getProduto() {
+		return produto;
+	}
+
+
+
+	public void setProduto(Produto produto) {
+		this.produto = produto;
+	}
+	
+	
+	
+	@Override
+	public String toString() {
+		return "Venda [notaFiscal=" + notaFiscal + ", total=" + total + ", cliente=" + cliente + ", produto=" + produto
+				+ ", fabricante=" + fabricante + "]";
+	}
+
+
+
+	public String getResumo() {
+		return "Venda [numero nota fiscal=" + notaFiscal + ", total=" + total + ", descrição produto=" + produto.getDescricao() + 
+				", situação estoque=" + produto.getQte() +", razao social do fabricante=" + fabricante.getRazaoSocial() + ", nome do cliente=" + cliente.getNome() +"]";
+
+				
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

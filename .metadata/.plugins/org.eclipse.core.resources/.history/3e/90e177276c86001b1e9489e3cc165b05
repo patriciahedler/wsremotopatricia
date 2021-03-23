@@ -1,0 +1,18 @@
+package decisao;
+
+import javax.swing.JOptionPane;
+
+public class DesafioDecisao2 {
+	//exercício 4 Escreva um código que leia três valores inteiros e diferentes e mostre-os em ordem decrescente
+public static void main(String[] args) {
+	int numero1 =  Inter.parseInt(JOptionPane.showInputDialog("Digite um número inteiro"));
+	int numero2 =  Inter.parseInt(JOptionPane.showInputDialog("Digite outro número inteiro e diferente do primeiro"));
+	int numero3 =  Inter.parseInt(JOptionPane.showInputDialog("Digite o terceiro número inteiro e diferente dos demais"));
+	
+	if(número1 > numero2 && numero2 > numero3) {
+		System.out.println(número1; numero2; numero 3);
+	
+		
+	}
+}
+}

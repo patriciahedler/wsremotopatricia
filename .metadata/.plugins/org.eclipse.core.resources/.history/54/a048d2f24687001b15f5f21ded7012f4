@@ -1,0 +1,22 @@
+package br.com.rubinhocar.modelo;
+
+public class Veiculo {
+
+	//não tem método main, só uma arquitetura
+	
+	private String montadora;
+	private float valor;
+	private short velocidadeAtual;
+	private boolean status;
+	private short velocidadeMaxima;
+	private String modelo;
+	// private pq tem o (-) antes do atributo no uml.
+	
+	
+	//sintaxe dos metodos
+	//<modificador> <tipo do retorno> <nome do metodo>( <tipo do param> <nome do param>...)
+	
+	public void preencherMontadora(String param) {
+		montadora = param;
+	}
+}

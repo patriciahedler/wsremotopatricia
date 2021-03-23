@@ -1,0 +1,66 @@
+package br.com.gama.implementacao;
+
+import javax.swing.JOptionPane;
+
+import br.com.gama.modelo.Aluno;
+import br.com.gama.modelo.Curso;
+import br.com.gama.modelo.Endereco;
+import br.com.gama.modelo.Professor;
+import br.com.gama.modelo.Turma;
+
+public class TesteTurma2 {
+	
+	public static int i(String msg) {
+		return Integer.parseInt(s(msg));
+	}
+	
+	public static float f(String msg) {
+		return Float.parseFloat(s(msg));
+	}
+
+	public static String s(String msg) {
+		return JOptionPane.showInputDialog(msg).toUpperCase();
+	}
+	
+	
+	public static void main(String[] args) {
+		Turma turma = new Turma(
+				s("Sigla turma") ,
+				s("Período"),
+				new Curso(
+						s("Sigla curso"),
+						"JAVA GAMA",
+						true,
+						f("valor do curso"),
+						(byte) 6,
+						0
+						),
+											
+				new Aluno(
+						"REGINA",
+						i("matricula"),
+						"bruna@gama.academy",
+						"1234-567",
+						new Endereco()
+						),
+				new Professor (
+						"CLEBER",
+						"engenheiro",
+						"exatas",
+						new Endereco()
+						)
+				);
+		
+		System.out.println(turma.toString());
+		// operacionalmente falando esse método demanda menos processamento
+		// esse método usou 2 linhas só
+				
+				
+				
+				
+				
+				
+	}
+	
+	
+}

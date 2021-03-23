@@ -1,0 +1,22 @@
+package br.com.caicai;
+
+public class Elevador {
+
+	private String nome;
+	private byte maximoPessoas;
+	private byte andarMaximo;
+	private byte andarMinimo;
+	private byte andarAtual;
+	private byte qtePessoas;
+	
+	public void preencherInicializar(String pNome, byte pMaxPessoas, byte pAndarMax, byte pAndarMin ) {
+		nome = pNome;
+		maxpessoas = pMaxPessoas;
+		andarmax = pAndarMax;
+		andarmin = pAndarMin;
+	}
+		
+	
+	
+	
+}

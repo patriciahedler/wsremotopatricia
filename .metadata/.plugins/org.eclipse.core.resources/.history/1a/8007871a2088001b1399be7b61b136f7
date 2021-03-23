@@ -1,0 +1,26 @@
+package br.com.gama.implementacao;
+
+import br.com.gama.modelo.Professor;
+
+public class TesteTurma {
+
+	public static void main(String[] args) {
+		Professor professor = new Professor();
+		professor.setFormacao("matematica");
+		professor.setNome("luis");
+
+		endereco.setBairro("Belem");
+		
+		
+				
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	}	
+}

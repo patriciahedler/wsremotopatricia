@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;Magica.java&apos; to &apos;bankofoz/src/br.com.bankofoz.util&apos;&#x0D;&#x0A;- Original project: &apos;bankofoz&apos;&#x0D;&#x0A;- Destination element: &apos;bankofoz/src/br.com.bankofoz.util&apos;&#x0D;&#x0A;- Original element: &apos;br.com.bankofoz.implementacao.Magica.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;br.com.bankofoz.util" element1="/src&lt;br.com.bankofoz.implementacao{Magica.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1616505505978" units="1" version="1.0"/>
+</session>

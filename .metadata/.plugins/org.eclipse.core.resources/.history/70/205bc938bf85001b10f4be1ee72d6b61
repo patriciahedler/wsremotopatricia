@@ -1,0 +1,18 @@
+package variaveis;
+
+import javax.swing.JOptionPane;
+
+public class TiposPrimitivos {
+	public static void main(String[] args) {
+		String time1 =JOptionPane.showInputDialog("Digite o Time1");
+		String time2 = JOptionPane.showInputDialog("Digite o Time2");
+		double entrada = JOptionPane.showInputDialog("Digite o valor da entrada");
+		int publico = 15000;
+		double total = entrada * publico;
+		
+		System.out.printf("No jogo entre %s x %s a arrecadação foi de: %.2f",
+				time1, time2, total);
+		
+				
+	}
+}

@@ -1,0 +1,14 @@
+package br.com.gama.modelo;
+
+public class Turma {
+
+	private String sigla;
+	private String periodo;
+	private Curso curso;
+	private Aluno aluno;
+	private Professor professor;
+	
+	
+	
+	
+}

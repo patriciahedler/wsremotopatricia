@@ -1,0 +1,22 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class WhileExemplo {
+public static void main(String[] args) {
+	// laço repetitivo
+	
+	String email = JOptionPane.showInputDialog("Email");
+	String nome = JOptionPane.showInputDialog("nome");
+	
+	while(email.contains("@" )==false){
+		email = JOptionPane.showInputDialog("Email com @");
+		
+	}
+	
+	System.out.println("Usuário"+email.substring(0, email.indexOf("@") ));
+	
+	while (nome)
+	
+}
+}
